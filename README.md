@@ -3,7 +3,20 @@
 Reporta incidencias urbanas (huecos, alumbrado, basura...) con foto y ubicación, y
 sigue su atención por la municipalidad. Proyecto académico de la Universidad de Lima.
 
-## Descargar
+## Cómo entrar
+
+Es **una sola app para todos**: lo que ves depende de la cuenta con la que inicias sesión.
+
+| Quién | Desde dónde | Cuenta |
+|---|---|---|
+| Ciudadano | APK en Android, o la versión web en iPhone/PC | Se registra solo en *Registrarse* y entra al instante |
+| Operador municipal | La misma app (o la web, cómodo desde la PC) | Cuenta entregada por el administrador |
+| Técnico | La misma app | Cuenta entregada por el administrador |
+
+**Versión web (iPhone, PC, cualquier navegador):** https://enzoordonez.github.io/ReportaYA-App/
+En iPhone, ábrela en Safari y usa *Compartir > Agregar a inicio* para tenerla como app.
+
+## Descargar (Android)
 
 **[Descargar ReportaYA 1.1.0 (APK, 55 MB)](https://github.com/EnzoOrdonez/ReportaYA-App/releases/latest)**
 
