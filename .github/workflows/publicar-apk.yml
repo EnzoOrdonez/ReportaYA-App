@@ -1,0 +1,32 @@
+# Publica (o actualiza) un Release con cada APK que se sube a apk/.
+# El nombre del archivo define la version: apk/ReportaYA-1.2.0.apk -> release v1.2.0.
+name: Publicar APK
+on:
+  push:
+    branches: [main]
+    paths: ["apk/*.apk"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Crear release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          APK=$(ls -1 apk/ReportaYA-*.apk | sort -V | tail -1)
+          VER=$(basename "$APK" .apk | sed 's/^ReportaYA-//')
+          SHA=$(sha256sum "$APK" | cut -d' ' -f1)
+          NOTAS="App ReportaYA $VER conectada a https://reportaya-api-mcg4.onrender.com.
+
+          Si tenias una version anterior firmada con otra llave, desinstalala antes de instalar esta.
+
+          SHA-256: $SHA"
+          if gh release view "v$VER" >/dev/null 2>&1; then
+            gh release upload "v$VER" "$APK" --clobber
+          else
+            gh release create "v$VER" "$APK" --title "ReportaYA $VER" --notes "$NOTAS" --latest
+          fi
