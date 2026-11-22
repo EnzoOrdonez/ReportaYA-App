@@ -22,7 +22,7 @@ jobs:
           SHA=$(sha256sum "$APK" | cut -d' ' -f1)
           NOTAS="App ReportaYA $VER conectada a https://reportaya-api-mcg4.onrender.com.
 
-          Si tenias una version anterior firmada con otra llave, desinstalala antes de instalar esta.
+          Se instala encima de la 1.1.0. Si tienes una version anterior a la 1.1.0, desinstalala primero (otra llave de firma).
 
           SHA-256: $SHA"
           if gh release view "v$VER" >/dev/null 2>&1; then

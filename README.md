@@ -18,16 +18,17 @@ En iPhone, ábrela en Safari y usa *Compartir > Agregar a inicio* para tenerla c
 
 ## Descargar (Android)
 
-**[Descargar ReportaYA 1.1.0 (APK, 55 MB)](https://github.com/EnzoOrdonez/ReportaYA-App/releases/latest)**
+**[Descargar ReportaYA 1.1.1 (APK, 55 MB)](https://github.com/EnzoOrdonez/ReportaYA-App/releases/latest)**
 
-Enlace directo alternativo: [apk/ReportaYA-1.1.0.apk](https://github.com/EnzoOrdonez/ReportaYA-App/raw/main/apk/ReportaYA-1.1.0.apk)
+Enlace directo alternativo: [apk/ReportaYA-1.1.1.apk](https://github.com/EnzoOrdonez/ReportaYA-App/raw/main/apk/ReportaYA-1.1.1.apk)
 
-SHA-256: `1fd9bbd83d42aa86af010c590b4b4f162abc61b237f9bd0d120727aca66e5e0d`
+SHA-256: `0b64f9d3a95655e661311f954d7aa805138299aae21c02c1ce5bd1978d4bf0cb`
 
 ## Instalar
 
-1. Si tenías una versión anterior de ReportaYA, **desinstálala primero**: esta versión
-   está firmada con otra llave y Android no la deja actualizar encima.
+1. Si tienes la **1.1.0**, instala la 1.1.1 encima (se actualiza sin perder nada).
+   Si tienes una versión anterior a la 1.1.0, **desinstálala primero**: estaba firmada
+   con otra llave y Android no deja actualizar encima.
 2. Abre el APK descargado. Si Android lo pide, permite *Instalar apps desconocidas*
    para tu navegador o gestor de archivos.
 3. Abre la app y toca **Regístrate**. La cuenta queda activa al instante (no hace falta
@@ -37,9 +38,9 @@ SHA-256: `1fd9bbd83d42aa86af010c590b4b4f162abc61b237f9bd0d120727aca66e5e0d`
 
 La app usa el backend en la nube `https://reportaya-api-mcg4.onrender.com`
 (código: [EnzoOrdonez/reportaya-api](https://github.com/EnzoOrdonez/reportaya-api)).
-Está en el plan gratis de Render: si nadie lo usó en un rato, la primera petición
-puede tardar alrededor de un minuto mientras el servidor despierta. Este repositorio
-lo mantiene despierto con un ping cada 10 minutos (`.github/workflows/mantener-activo.yml`).
+Está en el plan gratis de Render: si nadie lo usó en 15 minutos, el servidor se apaga
+y tarda alrededor de un minuto en volver. Desde la 1.1.1 la app lo despierta apenas se
+abre y avisa en el login mientras arranca, así que el primer ingreso ya no falla.
 
 Desde la pantalla de inicio de sesión, el botón **Servidor** permite apuntar la app a
 otra dirección (por ejemplo, un backend local en `http://IP-DE-TU-PC:8081`).
