@@ -18,21 +18,28 @@ En iPhone, ábrela en Safari y usa *Compartir > Agregar a inicio* para tenerla c
 
 ## Descargar (Android)
 
-**[Descargar ReportaYA 1.1.2 (APK, 56 MB)](https://github.com/EnzoOrdonez/ReportaYA-App/releases/latest)**
+**[Descargar ReportaYA 1.1.3 (APK, 56 MB)](https://github.com/EnzoOrdonez/ReportaYA-App/releases/latest)**
 
-Enlace directo alternativo: [apk/ReportaYA-1.1.2.apk](https://github.com/EnzoOrdonez/ReportaYA-App/raw/main/apk/ReportaYA-1.1.2.apk)
+Enlace directo alternativo: [apk/ReportaYA-1.1.3.apk](https://github.com/EnzoOrdonez/ReportaYA-App/raw/main/apk/ReportaYA-1.1.3.apk)
 
-SHA-256: `e3d552efced0392e190c8187dab273bd2e00b71242e2c2053c3dbe18503ed95d`
+SHA-256: `2713f8264190fa0627203cc3c93e2f0236bf59e9a10a5c6d27287d5a8b66aa8f`
 
 ## Instalar
 
-1. Si tienes la **1.1.0** o la **1.1.1**, instala la 1.1.2 encima (se actualiza sin perder nada).
+1. Si tienes la **1.1.0**, **1.1.1** o **1.1.2**, instala la 1.1.3 encima (se actualiza sin perder nada).
    Si tienes una versión anterior a la 1.1.0, **desinstálala primero**: estaba firmada
    con otra llave y Android no deja actualizar encima.
 2. Abre el APK descargado. Si Android lo pide, permite *Instalar apps desconocidas*
    para tu navegador o gestor de archivos.
 3. Abre la app y toca **Regístrate**. La cuenta queda activa al instante (no hace falta
    confirmar el correo).
+
+## Novedades de la 1.1.3
+
+- Etiquetas de estado, botones y avisos con colores de contraste suficiente (4,5:1 o más).
+- Textos con tildes en la recuperación de contraseña, en el mapa y en el correo con el código.
+- Los avisos ya no prometen una notificación: indican que el ciudadano verá el resultado en el detalle de su reporte.
+- Las pestañas de la pantalla del técnico se leen sobre el fondo verde.
 
 ## Novedades de la 1.1.2
 
@@ -48,8 +55,9 @@ SHA-256: `e3d552efced0392e190c8187dab273bd2e00b71242e2c2053c3dbe18503ed95d`
 La app usa el backend en la nube `https://reportaya-api-mcg4.onrender.com`
 (código: [EnzoOrdonez/reportaya-api](https://github.com/EnzoOrdonez/reportaya-api)).
 Está en el plan gratis de Render: si nadie lo usó en 15 minutos, el servidor se apaga
-y tarda alrededor de un minuto en volver. Desde la 1.1.1 la app lo despierta apenas se
-abre y avisa en el login mientras arranca, así que el primer ingreso ya no falla.
+y tarda alrededor de un minuto en volver. Un servicio externo (cron-job.org) lo consulta
+cada 10 minutos para mantenerlo despierto y, si aun así está dormido, la app lo despierta
+apenas se abre y avisa en el login mientras arranca.
 
 Desde la pantalla de inicio de sesión, el botón **Servidor** permite apuntar la app a
 otra dirección (por ejemplo, un backend local en `http://IP-DE-TU-PC:8081`).
