@@ -18,21 +18,30 @@ En iPhone, ábrela en Safari y usa *Compartir > Agregar a inicio* para tenerla c
 
 ## Descargar (Android)
 
-**[Descargar ReportaYA 1.1.1 (APK, 55 MB)](https://github.com/EnzoOrdonez/ReportaYA-App/releases/latest)**
+**[Descargar ReportaYA 1.1.2 (APK, 56 MB)](https://github.com/EnzoOrdonez/ReportaYA-App/releases/latest)**
 
-Enlace directo alternativo: [apk/ReportaYA-1.1.1.apk](https://github.com/EnzoOrdonez/ReportaYA-App/raw/main/apk/ReportaYA-1.1.1.apk)
+Enlace directo alternativo: [apk/ReportaYA-1.1.2.apk](https://github.com/EnzoOrdonez/ReportaYA-App/raw/main/apk/ReportaYA-1.1.2.apk)
 
-SHA-256: `0b64f9d3a95655e661311f954d7aa805138299aae21c02c1ce5bd1978d4bf0cb`
+SHA-256: `e3d552efced0392e190c8187dab273bd2e00b71242e2c2053c3dbe18503ed95d`
 
 ## Instalar
 
-1. Si tienes la **1.1.0**, instala la 1.1.1 encima (se actualiza sin perder nada).
+1. Si tienes la **1.1.0** o la **1.1.1**, instala la 1.1.2 encima (se actualiza sin perder nada).
    Si tienes una versión anterior a la 1.1.0, **desinstálala primero**: estaba firmada
    con otra llave y Android no deja actualizar encima.
 2. Abre el APK descargado. Si Android lo pide, permite *Instalar apps desconocidas*
    para tu navegador o gestor de archivos.
 3. Abre la app y toca **Regístrate**. La cuenta queda activa al instante (no hace falta
    confirmar el correo).
+
+## Novedades de la 1.1.2
+
+- El técnico vuelve a su bandeja al finalizar un reporte y el operador a la cola al rechazarlo.
+- Cada reporte y cada cierre técnico llevan de 1 a 3 fotos; el aviso muestra el código del reporte.
+- Accesibilidad: contraste del texto, áreas táctiles de 48 dp, etiquetas para el lector de
+  pantalla y textos del sistema en español. Sin cortes con el texto ampliado al 200 %.
+- En tablet y PC la app se centra con un ancho de lectura en lugar de estirarse.
+- Ortografía corregida en las pantallas.
 
 ## Servidor
 
