@@ -18,21 +18,37 @@ En iPhone, ábrela en Safari y usa *Compartir > Agregar a inicio* para tenerla c
 
 ## Descargar (Android)
 
-**[Descargar ReportaYA 1.1.3 (APK, 56 MB)](https://github.com/EnzoOrdonez/ReportaYA-App/releases/latest)**
+**[Descargar ReportaYA 1.1.4 (APK, 56 MB)](https://github.com/EnzoOrdonez/ReportaYA-App/releases/latest)**
 
-Enlace directo alternativo: [apk/ReportaYA-1.1.3.apk](https://github.com/EnzoOrdonez/ReportaYA-App/raw/main/apk/ReportaYA-1.1.3.apk)
+Enlace directo alternativo: [apk/ReportaYA-1.1.4.apk](https://github.com/EnzoOrdonez/ReportaYA-App/raw/main/apk/ReportaYA-1.1.4.apk)
 
-SHA-256: `2713f8264190fa0627203cc3c93e2f0236bf59e9a10a5c6d27287d5a8b66aa8f`
+SHA-256: `59da3b457fbf8e8be7412d55a71cb3be437b66438da263d73f8b9c9aacc57e31`
 
 ## Instalar
 
-1. Si tienes la **1.1.0**, **1.1.1** o **1.1.2**, instala la 1.1.3 encima (se actualiza sin perder nada).
+1. Si tienes una versión desde la **1.1.0** hasta la **1.1.3**, instala la 1.1.4 encima (se actualiza sin perder nada).
    Si tienes una versión anterior a la 1.1.0, **desinstálala primero**: estaba firmada
    con otra llave y Android no deja actualizar encima.
 2. Abre el APK descargado. Si Android lo pide, permite *Instalar apps desconocidas*
    para tu navegador o gestor de archivos.
-3. Abre la app y toca **Regístrate**. La cuenta queda activa al instante (no hace falta
-   confirmar el correo).
+3. Abre la app y toca **Registrarse**. Acepta el aviso de privacidad; la cuenta queda activa
+   al instante (no hace falta confirmar el correo).
+
+## Novedades de la 1.1.4
+
+- Al crear un reporte la app pide tu ubicación una sola vez y marca el punto en el mapa; el
+  botón *Mi ubicación* la vuelve a pedir. Si niegas el permiso, tocas el mapa como antes.
+- Aviso de alcance: ReportaYA es una simulación académica, el número del reporte no es un
+  expediente municipal y se muestran los números de emergencia 105, 116 y 106.
+- Aviso de privacidad antes de registrarte (se guarda la fecha y la versión aceptadas) y
+  consultable desde el login.
+- Antes de enviar ves un resumen del reporte y puedes añadir una referencia del lugar.
+- Cada foto pesa como máximo 2 MB y debe ser JPG o PNG.
+- Recuperar contraseña: el correo trae un botón que abre la web con el código puesto, y en la
+  app puedes pegar el código con *Pegar código*. Cambiar la contraseña cierra tus otras sesiones.
+- Seguridad: contraseña de al menos 8 caracteres, bloqueo de 5 minutos tras 5 intentos
+  fallidos y cierre de sesión que invalida el token en el servidor.
+- Se ocultó el selector de servidor (mantén presionado el título *ReportaYA* para verlo).
 
 ## Novedades de la 1.1.3
 
@@ -59,8 +75,9 @@ y tarda alrededor de un minuto en volver. Un servicio externo (cron-job.org) lo 
 cada 10 minutos para mantenerlo despierto y, si aun así está dormido, la app lo despierta
 apenas se abre y avisa en el login mientras arranca.
 
-Desde la pantalla de inicio de sesión, el botón **Servidor** permite apuntar la app a
-otra dirección (por ejemplo, un backend local en `http://IP-DE-TU-PC:8081`).
+Para pruebas, mantén presionado el título **ReportaYA** en el login: aparece el botón
+**Servidor**, que permite apuntar la app a otra dirección (por ejemplo, un backend local en
+`http://IP-DE-TU-PC:8081`).
 
 ## Créditos
 
